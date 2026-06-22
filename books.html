@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books — Nova Storm</title>
+  <meta name="description" content="Explore the books and worlds of fantasy author Nova Storm, including The Scales.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="brand">Nova Storm</a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="books.html" aria-current="page">Books</a></li>
+          <li><a href="index.html#buy">Where to Buy</a></li>
+          <li><a href="index.html#newsletter" class="nav-cta">Newsletter &amp; ARCs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">The Work</p>
+        <h1 class="h1-page">Worlds worth<br>losing yourself in.</h1>
+      </div>
+    </section>
+
+    <div class="claw-divider" aria-hidden="true">
+      <svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 22 C 30 8, 45 8, 50 18" />
+        <path d="M48 24 C 70 6, 90 6, 95 16" />
+        <path d="M92 20 C 108 10, 120 10, 138 6" />
+      </svg>
+    </div>
+
+    <section id="the-scales" class="book-detail">
+      <div class="wrap book-detail__grid">
+        <div class="book-cover book-cover--lg" aria-hidden="true"><span>Cover<br>coming soon</span></div>
+        <div class="book-detail__copy">
+          <p class="book-card__tag">Dragon-blood Fantasy · Book One</p>
+          <h2>The Scales</h2>
+          <p class="lede">Sixteen soul-colours. Seven powers. One world where dying is never the end of your problems.</p>
+          <p class="body-text">In a world bound by dragon-blood, every soul is born marked by one of sixteen colours — and that colour decides everything: your power, your class, your place, and how far you're allowed to rise before the world decides you've risen too far.</p>
+          <p class="body-text">When the rules of survival are written by something older and crueler than any kingdom, the only way through is to be smarter than the system built to contain you. This is a story about power that costs more than it gives, choices with no clean side, and the kind of woman who learns to use a rigged game against the people who rigged it.</p>
+          <div class="book-detail__meta">
+            <div>
+              <p class="eyebrow">Status</p>
+              <p>In progress</p>
+            </div>
+            <div>
+              <p class="eyebrow">Genre</p>
+              <p>Dark / Epic Fantasy</p>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a href="index.html#newsletter" class="btn btn-primary">Get notified at release</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="more-coming">
+      <div class="wrap more-coming__inner">
+        <p class="eyebrow">Coming Later</p>
+        <h3>Reading order, character profiles &amp; art</h3>
+        <p class="text-muted">As more of this world comes together, this page will grow into a full library — reading order, character dossiers, and original art. For now, the newsletter is the best way to follow along as it happens.</p>
+        <a href="index.html#newsletter" class="text-link">Join the newsletter →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="brand brand--footer">Nova Storm</p>
+        <p class="text-muted">Trauma. Morally gray. Cunning women who win anyway.</p>
+      </div>
+      <div class="site-footer__links">
+        <div class="footer-col">
+          <p class="eyebrow">Explore</p>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="index.html#buy">Where to Buy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Follow</p>
+          <ul>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Goodreads</a></li>
+            <li><a href="#">Amazon</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p class="text-muted">© <span id="year"></span> Nova Storm. All rights reserved.</p>
+      <p class="cat-easter-egg" tabindex="0">🐾 <span class="cat-easter-egg__text">Every story needs a cat. Mine just happen to be real.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

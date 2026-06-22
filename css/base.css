@@ -1,0 +1,171 @@
+/* ============================================
+   NOVA STORM — Base / Reset / Typography
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg, video { max-width: 100%; display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol { padding: 0; margin: 0; list-style: none; }
+h1, h2, h3, h4, p, figure { margin: 0; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ---- Visible keyboard focus ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---- Typography roles ---- */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bark);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.75rem, 7vw, var(--size-3xl));
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, var(--size-2xl));
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--size-lg);
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.lede {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--size-md);
+  color: var(--sage);
+  line-height: 1.4;
+}
+
+p.body-text {
+  max-width: 38em;
+  color: var(--ink);
+}
+
+.text-muted { color: var(--ink-60); }
+
+/* ---- Layout helpers ---- */
+.wrap {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.wrap-narrow {
+  width: 100%;
+  max-width: var(--content-narrow);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+section { padding: var(--space-xl) 0; }
+
+@media (max-width: 640px) {
+  section { padding: var(--space-lg) 0; }
+  .wrap, .wrap-narrow { padding: 0 var(--space-sm); }
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--size-sm);
+  letter-spacing: 0.02em;
+  padding: 0.85em 1.6em;
+  border-radius: 2px;
+  transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.btn-primary {
+  background: var(--clay);
+  color: var(--parchment);
+}
+.btn-primary:hover { background: #9c3c27; transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--pine);
+}
+.btn-ghost:hover { background: var(--ink); color: var(--parchment); }
+
+.btn-on-dark {
+  background: var(--parchment);
+  color: var(--pine);
+  font-weight: 700;
+  border: 1px solid var(--parchment);
+}
+.btn-on-dark:hover { background: var(--clay); color: var(--parchment); border-color: var(--clay); }
+
+/* ---- Claw-mark divider (signature element) ----
+   Three asymmetric scratch-marks, used between sections
+   instead of a plain <hr>. Echoes "beast/dragon-blood"
+   worldbuilding without being a literal illustration. */
+.claw-divider {
+  width: 100%;
+  height: 28px;
+  margin: 0 auto;
+  display: block;
+}
+.claw-divider svg { width: 140px; height: 28px; display: block; margin: 0 auto; }
+.claw-divider path { stroke: var(--bark); stroke-width: 1.75; fill: none; stroke-linecap: round; opacity: 0.85; }
+
+.claw-divider.on-dark path { stroke: var(--bark); opacity: 0.7; }
