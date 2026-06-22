@@ -27,10 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Newsletter / ARC signup form ----
-  // NOTE: This currently shows a local confirmation only.
-  // To go live, replace the fetch() call below with your
-  // Kit (ConvertKit) form action URL — see README for steps.
+  // ---- Newsletter / ARC signup ----
+  // Handled entirely by Kit's embedded form widgets (see the <script>
+  // tags in the #newsletter section of index.html). No custom JS needed —
+  // Kit manages validation, submission, tagging, and the confirmation
+  // email on their end.
   const form = document.getElementById('signupForm');
   const formNote = document.getElementById('formNote');
 

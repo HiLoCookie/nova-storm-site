@@ -130,30 +130,25 @@
 
     <!-- ============ NEWSLETTER / ARC BAND ============ -->
     <section id="newsletter" class="signup-band">
-      <div class="wrap signup-band__grid">
-        <div class="signup-band__copy">
+      <div class="wrap">
+        <div class="signup-band__intro">
           <p class="eyebrow eyebrow--on-dark">Stay Close to the Story</p>
-          <h2 class="on-dark">Newsletter &amp; ARC sign-up</h2>
-          <p class="body-text on-dark">Get cover reveals, release news, and the occasional unhinged worldbuilding tangent straight to your inbox. Want early copies before release day? Tick the ARC box below.</p>
+          <h2 class="on-dark">Join the newsletter</h2>
+          <p class="body-text on-dark">Get cover reveals, release news, and the occasional unhinged worldbuilding tangent straight to your inbox.</p>
         </div>
 
-        <form class="signup-form" id="signupForm" novalidate>
-          <div class="form-row">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
-          </div>
+        <div class="kit-embed-wrap kit-embed-wrap--centered">
+          <script async data-uid="1393e9e09a" src="https://nova-storm.kit.com/1393e9e09a/index.js"></script>
+        </div>
 
-          <fieldset class="form-row form-row--checkbox">
-            <legend class="sr-only">Sign-up preferences</legend>
-            <label class="checkbox-label">
-              <input type="checkbox" name="arc" id="arc" value="arc-reader">
-              <span>I'd also like to be considered for ARC (Advance Reader Copy) opportunities</span>
-            </label>
-          </fieldset>
+        <div class="arc-cta">
+          <p class="body-text on-dark">Want an early copy before release day?</p>
+          <!-- ARC popup trigger — confirmed working with Kit's modal trigger link. -->
+          <a class="btn btn-on-dark" data-formkit-toggle="65482eb757" href="https://nova-storm.kit.com/65482eb757">Join the ARC team</a>
+          <script async data-uid="65482eb757" src="https://nova-storm.kit.com/65482eb757/index.js"></script>
+        </div>
 
-          <button type="submit" class="btn btn-on-dark signup-submit">Sign me up</button>
-          <p class="form-note" id="formNote">No spam. Unsubscribe anytime. Cat tax photos occasionally included, unannounced.</p>
-        </form>
+        <p class="form-note">No spam. Unsubscribe anytime. Cat tax photos occasionally included, unannounced.</p>
       </div>
     </section>
 
